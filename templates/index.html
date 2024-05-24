@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #97c8ff; /* Set background color */
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #b5e5ff; /* Set container background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+            text-align: center;
+        }
+        h1 {
+            color: #333; /* Set title color */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Add some margin below the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="certificate_image.jpg" alt="Certificate Image"> <!-- Add image -->
+        <h1>Certificate Generator</h1> <!-- Add title -->
+        <form action="/generate_certificate" method="post">
+            <label for="roll_number">Enter Roll Number:</label>
+            <input type="text" id="roll_number" name="roll_number" required>
+            <br><br>
+            <input type="submit" value="Generate Certificate">
+        </form>
+    </div>
+</body>
+</html>
